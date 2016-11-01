@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by NikitaShuvalov on 11/1/16.
  */
 
-public class UserContactFragment extends Fragment {
+public class UserContactFragment extends MyFragments {
     private String mTitle = "Contact Me";
     @Nullable
     @Override

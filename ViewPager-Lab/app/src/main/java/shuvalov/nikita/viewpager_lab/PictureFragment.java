@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by NikitaShuvalov on 11/1/16.
  */
 
-public class PictureFragment extends Fragment {
+public class PictureFragment extends MyFragments {
     private String mTitle= "Picture";
     @Nullable
     @Override
@@ -22,7 +22,5 @@ public class PictureFragment extends Fragment {
     public String getTitle(){
         return mTitle;
     }
-    public PictureFragment castFragmentToChildClass(Fragment c){
-        return (PictureFragment) c;
-    }
+
 }

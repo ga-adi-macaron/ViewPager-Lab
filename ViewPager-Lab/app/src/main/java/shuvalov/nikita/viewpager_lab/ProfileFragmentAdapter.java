@@ -11,9 +11,9 @@ import java.util.ArrayList;
  */
 
 public class ProfileFragmentAdapter extends FragmentPagerAdapter {
-    ArrayList<Fragment> mFragmentArrayList;
+    ArrayList<MyFragments> mFragmentArrayList;
 
-    public ProfileFragmentAdapter(FragmentManager fm, ArrayList<Fragment> fragmentArrayList) {
+    public ProfileFragmentAdapter(FragmentManager fm, ArrayList<MyFragments> fragmentArrayList) {
         super(fm);
         mFragmentArrayList=fragmentArrayList;
     }
@@ -29,26 +29,10 @@ public class ProfileFragmentAdapter extends FragmentPagerAdapter {
     }
 
 
-    /*I wanted Fragment subclasses to hold the title to allow it to be more dynamic.
-    But since my fragment objects were all cast to Fragment, I can't call getTitle without editing Fragment Class.
-    This is my work-around to that, as dirty as it is.
-    */
     @Override
     public CharSequence getPageTitle(int position) {
-        Fragment frag = mFragmentArrayList.get(position);
-        Class c = frag.getClass();
-        if (c.equals(new PictureFragment().getClass())){
-            PictureFragment p = (PictureFragment) frag;
-            return p.getTitle();
-        } else if (c.equals(new PersonalinfoFragment().getClass())){
-            PersonalinfoFragment p = (PersonalinfoFragment) frag;
-            return p.getTitle();
-        }else if (c.equals(new UserContactFragment().getClass())){
-            UserContactFragment p = (UserContactFragment) frag;
-            return p.getTitle();
-        }else{
-            return null;
+        return mFragmentArrayList.get(position).getTitle();
+
         }
 
     }
-}

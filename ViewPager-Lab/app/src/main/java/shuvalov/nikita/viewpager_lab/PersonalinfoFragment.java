@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by NikitaShuvalov on 11/1/16.
  */
 
-public class PersonalinfoFragment extends Fragment {
+public class PersonalinfoFragment extends MyFragments {
     private String mTitle = "Summary";
     @Nullable
     @Override
@@ -22,7 +22,5 @@ public class PersonalinfoFragment extends Fragment {
     public String getTitle(){
         return mTitle;
     }
-    public PersonalinfoFragment castFragmentToChildClass(Fragment c){
-        return (PersonalinfoFragment) c;
-    }
+
 }

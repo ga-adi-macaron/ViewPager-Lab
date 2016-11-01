@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<Fragment> mFragmentArrayList;
+    ArrayList<MyFragments> mFragmentArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         mFragmentArrayList = new ArrayList<>();
 
-        Fragment pictureFragment = new PictureFragment();
-        Fragment personalInfoFragment = new PersonalinfoFragment();
-        Fragment contactInfoFragment = new UserContactFragment();
+        MyFragments pictureFragment = new PictureFragment();
+        MyFragments personalInfoFragment = new PersonalinfoFragment();
+        MyFragments contactInfoFragment = new UserContactFragment();
 
         mFragmentArrayList.add(pictureFragment);
         mFragmentArrayList.add(personalInfoFragment);
