@@ -12,10 +12,17 @@ import android.view.ViewGroup;
  */
 
 public class PictureFragment extends Fragment {
+    private String mTitle= "Picture";
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_picture, container, false);
         return v;
+    }
+    public String getTitle(){
+        return mTitle;
+    }
+    public PictureFragment castFragmentToChildClass(Fragment c){
+        return (PictureFragment) c;
     }
 }

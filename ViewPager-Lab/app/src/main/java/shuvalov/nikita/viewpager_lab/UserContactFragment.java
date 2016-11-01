@@ -12,11 +12,16 @@ import android.view.ViewGroup;
  */
 
 public class UserContactFragment extends Fragment {
-
+    private String mTitle = "Contact Me";
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_contact, container, false);
         return v;
     }
-}
+
+    public String getTitle() {
+        return mTitle;
+    }
+
+    }

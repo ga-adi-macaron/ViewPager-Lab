@@ -12,11 +12,17 @@ import android.view.ViewGroup;
  */
 
 public class PersonalinfoFragment extends Fragment {
-
+    private String mTitle = "Summary";
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_personal, container, false);
         return v;
+    }
+    public String getTitle(){
+        return mTitle;
+    }
+    public PersonalinfoFragment castFragmentToChildClass(Fragment c){
+        return (PersonalinfoFragment) c;
     }
 }
