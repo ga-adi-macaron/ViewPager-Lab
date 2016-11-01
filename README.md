@@ -47,3 +47,9 @@ Create an app with the above requirements.
 
 - [Fragments](http://developer.android.com/guide/components/fragments.html)
 - [Tabs](http://developer.android.com/training/implementing-navigation/lateral.html)
+
+---
+
+## Licensing
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact [legal@ga.co](mailto:legal@ga.co).
