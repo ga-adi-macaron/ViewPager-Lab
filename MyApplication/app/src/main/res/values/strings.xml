@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UserInfoTabs</string>
+    <string name="current_curriculum">Current Curriculum</string>
+    <string name="current_curriculum_android">Current Curriculum: Android</string>
+</resources>
