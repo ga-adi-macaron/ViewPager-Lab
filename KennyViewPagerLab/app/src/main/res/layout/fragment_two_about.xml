@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/kenny_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="24sp"
+        android:text="Sup brah, I'm Kenny. I'm from planet Earth (SoCal specifically) and I love shredding the gnar.
+You know the feeling when you're totally chillin' on the beach, and you see a killer wave out there?
+You just gotta go out there and carve it up, ya know? You really feel at one with the universe when ur gliding across the sea."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Anyway, that's me in an organic nutshell."/>
+</LinearLayout>
