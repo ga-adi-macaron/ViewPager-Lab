@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: Nikita Shuvalov"
+        android:textColor="#333"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/agetext"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age: 27 years young"
+        android:textColor="#333"/>
+
+    <TextView
+        android:id="@+id/heighttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="Height: 5ft 8in when moon is overhead, otherwise 5ft 7in "
+        android:textColor="#333"/>
+
+    <TextView
+        android:id="@+id/hobbiestext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Hobbies: Magnets, My Little Pony"
+        android:textColor="#333"/>
+
+</LinearLayout>
